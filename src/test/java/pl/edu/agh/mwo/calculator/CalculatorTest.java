@@ -18,7 +18,7 @@ public class CalculatorTest {
         assertEquals(5, calc.subtract(7, 2));
     }
 
-    @Test(expected = Exception.class)
+    @Test(expected=java.lang.ArithmeticException.class)
     public void testDivideByZero() {
         Calculator calc = new Calculator();
         calc.divide(5,0);
